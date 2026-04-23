@@ -1,36 +1,114 @@
-/* Using your Creative Earth Palette */
+
 :root {
-    --soft-cream: rgb(255, 251, 240);
-    --sand: rgb(243, 239, 224);
-    --terracotta: rgb(188, 108, 37);
-    --dark-moss: rgb(40, 54, 24);
+    --soft-cream: #FFFBF0;
+    --sand: #F3EFE0;
+    --terracotta: #BC6C25;
+    --dark-moss: #283618;
+    --deep-purple: #2D0066; /* Your Logo/Header Accent Color */
 }
 
 body {
     background-color: var(--soft-cream);
-    color: var(--dark-moss);
-    font-family: 'Arial', sans-serif; /* Replace with your chosen font */
-    line-height: 1.6;
+    color: var(--deep-purple);
+    font-family: 'Inter', sans-serif; /* Matches your clean UI look */
     margin: 0;
 }
 
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 80px;
-    background: var(--sand);
-    position: sticky; /* Sticky behavior from Figma */
-    top: 0;
-    z-index: 1000;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--sand);
 }
 
-.hero {
-    height: 100vh;
+.navbar ul {
     display: flex;
-    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--deep-purple);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    padding: 80px 5%;
+    display: flex;
     justify-content: center;
+}
+
+.hero-container {
+    display: flex;
     align-items: center;
-    text-align: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--deep-purple);
+    margin-bottom: 30px;
+}
+
+/* Rounded Portrait Image */
+.hero-image img {
+    width: 450px;
+    border-radius: 30px; /* Gives it that soft Figma look */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Button Styling */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 2px solid var(--terracotta);
+}
+
+.btn-primary {
+    background-color: var(--terracotta);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--terracotta);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(188, 108, 37, 0.3);
 }
 
 .skills-grid {
@@ -44,7 +122,7 @@ body {
     background: var(--sand);
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease; /* Animation requirement */
+    transition: transform 0.3s ease; 
 }
 
 .skill-card:hover {
