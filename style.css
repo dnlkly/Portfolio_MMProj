@@ -4,18 +4,16 @@
     --sand: #F3EFE0;
     --terracotta: #BC6C25;
     --dark-moss: #283618;
-    --deep-purple: #2D0066; /* Your Logo/Header Accent Color */
+    --deep-purple: #2D0066; 
 }
 
 body {
     background-color: var(--soft-cream);
     color: var(--deep-purple);
-    font-family: 'Inter', sans-serif; /* Matches your clean UI look */
-    margin: 0;
+    font-family: 'Inter', sans-serif; 
 }
 
-/* Navbar Styling */
-.navbar {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +34,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Hero Section Styling */
+
 .hero {
     padding: 80px 5%;
     display: flex;
