@@ -13,14 +13,13 @@
 
 <body>
 
-    <!-- Navigation -->
     <header class="navbar">
         <div class="logo">
-            <!-- Replace with your SVG Logo -->
-            <svg width="40" height="40" viewBox="0 0 100 100">
-                <rect width="100" height="100" fill="#2A0B5C" /><text x="50" y="65" fill="#FFF" font-size="50"
-                    text-anchor="middle" font-family="sans-serif">DK</text>
+            <a href="#">
+            <svg width="50" height="55" viewBox="0 0 50 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.9229 0.5C20.3014 0.500017 24.6126 0.846074 27.8701 1.52832L28.5078 1.66895L28.5117 1.66992C30.3639 2.0852 32.0528 2.58813 33.5801 3.17676L33.8848 3.29395L34.1143 3.06348L36.6709 0.5H44.7422L39.4453 5.70215L39.0283 6.11133L39.4971 6.45996C42.2513 8.50594 44.4948 10.9941 46.2012 13.9531C48.3932 17.7547 49.5 22.283 49.5 27.5557C49.5 32.4725 48.3461 36.9164 46.0439 40.8984L46.042 40.9004C44.5003 43.5974 42.6129 45.8799 40.3809 47.7529L39.9746 48.0938L40.3398 48.4795L46.0312 54.5H37.2324L34.5938 51.7295L34.3535 51.4775L34.0342 51.6143C32.4053 52.313 30.6735 52.8759 28.8379 53.3018L28.0439 53.4766C24.7923 54.1561 20.4753 54.5 15.0811 54.5H0.5V0.5H14.9229ZM13.3457 30.1562L7.68066 35.7988L7.5332 35.9453V49.2207H15.3975C19.1931 49.2207 22.5111 48.9607 25.3467 48.4365L25.3457 48.4355C26.7661 48.1755 28.1298 47.8065 29.4355 47.3252L30.1494 47.0625L29.625 46.5117L14.0605 30.166L13.708 29.7949L13.3457 30.1562ZM34.2959 10.7588L19.2871 25.5L18.9365 25.8438L19.2734 26.2002L35.4834 43.3438L35.8174 43.6963L36.1797 43.374C37.7815 41.9495 39.0666 40.2848 40.0332 38.3828L40.0322 38.3818C41.5559 35.4353 42.3047 31.7818 42.3047 27.4443C42.3047 23.0744 41.4888 19.3547 39.8291 16.3086C38.6278 14.1037 36.9978 12.2375 34.9443 10.7139L34.6006 10.46L34.2959 10.7588ZM7.5332 29.7148L8.3877 28.8584L28.8613 8.33105L29.4277 7.7627L28.668 7.50391C27.4375 7.08522 26.172 6.7593 24.8721 6.52637H24.873C22.2207 6.02647 19.0603 5.7793 15.3975 5.7793H7.5332V29.7148Z" fill="#2E0A71" stroke="black"/>
             </svg>
+            </a>
         </div>
         <nav>
             <ul>
@@ -118,7 +117,7 @@
     </section>
 
     <section id="talents" class="talents">
-        <h2>Talents</h2>
+        <h2 class="section-title">Talents</h2>
 
         <div class="talent-labels">
             <span class="label-item active" onclick="moveCarousel(0)">Visual Arts</span>
@@ -132,24 +131,24 @@
             <div class="carousel-viewport">
                 <div class="carousel-track">
                     <div class="talent-group">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 1">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 2">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 3">
+                        <img src="assets\vs1.jpg" alt="Art 1">
+                        <img src="assets\vs2.jpg" alt="Art 2">
+                        <img src="assets\vs3.jpg" alt="Art 3">
                     </div>
                     <div class="talent-group">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 1">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 2">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 3">
+                        <img src="assets\p1.jpg" alt="Photo 1">
+                        <img src="assets\p2.jpg" alt="Photo 2">
+                        <img src="assets\p3.jpg" alt="Photo 3">
                     </div>
                     <div class="talent-group">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 1">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 2">
-                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 3">
+                        <img src="assets\ps1.jpg" alt="Speech 1">
+                        <img src="assets\ps2.jpg" alt="Speech 2">
+                        <img src="assets\ps3.jpg" alt="Speech 3">
                     </div>
                 </div>
             </div>
 
-            <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+            <button class="arrow right" onclick="nextSlide()">&#10095;</button>
         </div>
 
         <div class="carousel-dots">
@@ -186,7 +185,7 @@
                 <form>
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Contact Number">
+                    <input type="tel" placeholder="Contact Number">
                     <textarea placeholder="Body" rows="5"></textarea>
                     <button type="submit" class="send-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#2A0B5C" stroke-width="2">
@@ -229,34 +228,29 @@
             }
         };
 
-        let currentSlide = 0;
-        const track = document.querySelector('.carousel-track');
-        const labels = document.querySelectorAll('.label-item');
-        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
 
         function moveCarousel(index) {
             const track = document.querySelector('.carousel-track');
+            const labels = document.querySelectorAll('.label-item');
+            const dots = document.querySelectorAll('.dot');
 
-            track.style.transform = `translateX(-${index * 100}%)`;
+            if (index < 0) index = 2;
+            if (index > 2) index = 0;
 
-
-            document.querySelectorAll('.label-item').forEach((item, i) => {
-                item.classList.toggle('active', i === index);
-            });
+            currentIndex = index;
+            track.style.transform = `translateX(-${index * 33.3333}%)`;
+            labels.forEach((lbl, i) => lbl.classList.toggle('active', i === index));
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
         }
 
-
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % labels.length;
-            moveCarousel(currentSlide);
+            moveCarousel(currentIndex + 1);
         }
 
         function prevSlide() {
-            currentSlide = (currentSlide - 1 + labels.length) % labels.length;
-            moveCarousel(currentSlide);
+            moveCarousel(currentIndex - 1);
         }
     </script>
-
 </body>
-
 </html>
