@@ -1,70 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <<header class="navbar">
-    <div class="logo">
-        <img src="logo.svg" alt="DK Logo"> </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section id="home" class="hero">
-    <div class="hero-container">
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <!-- Replace with your SVG Logo -->
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#2A0B5C" /><text x="50" y="65" fill="#FFF" font-size="50"
+                    text-anchor="middle" font-family="sans-serif">DK</text>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
         <div class="hero-text">
             <h3>Welcome to the</h3>
             <h1>Daniel Portfolio</h1>
-            <p>Turning complex ideas into seamless digital experiences. As a Multimedia Specialist and Engineering student, I combine technical design with  creative media to build portfolios and projects that resonate.</p>
+            <p>Turning complex ideas into seamless digital experiences. As a Multimedia Specialist and Engineering
+                student, I combine technical design with creative media to build portfolios and projects that resonate.
+            </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">Connect with ME</a>
                 <a href="#about" class="btn btn-secondary">Learn more about Me</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src=".\assets\663ae73db2af1b112b80577eee1e6057.jpg" alt="Daniel (Placeholder) Portrait">
+            <img src=".\assets\663ae73db2af1b112b80577eee1e6057.jpg" alt="Daniel Portrait">
         </div>
-    </div>
-</section>
+    </section>
 
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Graphic Design</h3>
-                    <p>I create purposeful visual identities...</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Video Production</h3>
-                    <video width="100%" controls>
-                        <source src="demo.mp4" type="video/mp4">
-                    </video>
+    <div class="divider"></div>
+
+    <section id="about" class="about">
+        <div class="about-card">
+            <div class="about-image-wrapper">
+                <div class="fade-overlay"></div>
+                <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="About Me Character"
+                    class="hover-color-img">
+            </div>
+
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am a Bachelor of Engineering Technology student with a deep-seated passion for merging technical
+                    precision with creative storytelling. My academic background provides me with a unique foundation in
+                    design principles and material selection, which I apply to create multimedia solutions that are as
+                    structurally sound as they are visually compelling.</p>
+                <p>Currently, my work spans across several multimedia building blocks, including graphic design, video
+                    production, and audio engineering. I thrive on the challenge of developing integrated digital
+                    experiences, whether it’s through a meticulously edited video or a custom-engineered audio track,
+                    ensuring that every project serves a clear purpose and resonates with its intended audience.</p>
+            </div>
+
+            <div class="play-btn">
+                <svg viewBox="0 0 24 24" fill="#2A0B5C" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5V19L19 12L8 5Z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"
+                style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=400&auto=format&fit=crop');">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3>Graphics<br>Design</h3>
+                    <p>I create purposeful visual identities and layouts by blending engineering precision with modern
+                        aesthetic principles.</p>
                 </div>
             </div>
-        </section>
+            <div class="skill-card"
+                style="background-image: url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=400&auto=format&fit=crop');">
+                <div class="card-overlay"></div>
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="#2A0B5C">
+                        <path d="M8 5V19L19 12L8 5Z" />
+                    </svg></div>
+                <div class="card-content">
+                    <h3>Video<br>Production</h3>
+                    <p>I produce high-quality cinematic content through expert editing, motion graphics, and
+                        narrative-driven storytelling.</p>
+                </div>
+            </div>
+            <div class="skill-card"
+                style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=400&auto=format&fit=crop');">
+                <div class="card-overlay"></div>
+                <div class="card-icon"><svg viewBox="0 0 24 24" fill="#2A0B5C">
+                        <path d="M8 5V19L19 12L8 5Z" />
+                    </svg></div>
+                <div class="card-content">
+                    <h3>Audio<br>Engineering</h3>
+                    <p>I deliver immersive soundscapes and clear vocal recordings through technical mixing and
+                        professional-grade audio production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
+    <section id="talents" class="talents">
+        <h2>Talents</h2>
+
+        <div class="talent-labels">
+            <span class="label-item active" onclick="moveCarousel(0)">Visual Arts</span>
+            <span class="label-item" onclick="moveCarousel(1)">Photography</span>
+            <span class="label-item" onclick="moveCarousel(2)">Public Speaking</span>
+        </div>
+
+        <div class="carousel-container">
+            <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                    <div class="talent-group">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 1">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 2">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Visual Art 3">
+                    </div>
+                    <div class="talent-group">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 1">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 2">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Photography 3">
+                    </div>
+                    <div class="talent-group">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 1">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 2">
+                        <img src=".\assets\7e444aa5e65fa4a0cade104fb1e9ee45.jpg" alt="Speaking 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot active" onclick="moveCarousel(0)"></span>
+            <span class="dot" onclick="moveCarousel(1)"></span>
+            <span class="dot" onclick="moveCarousel(2)"></span>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="proj-box large"></div>
+            <div class="proj-box large"></div>
+            <div class="proj-box small"></div>
+            <div class="proj-box small"></div>
+            <div class="proj-box small"></div>
+            <div class="proj-box large"></div>
+            <div class="proj-box large"></div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact" class="contact">
+        <div class="contact-header">
             <h2>Connect with ME!</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Body"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+            <p>Whether you have a question about my work or a project in mind, feel free to reach out using the form
+                below.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="form-box">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Contact Number">
+                    <textarea placeholder="Body" rows="5"></textarea>
+                    <button type="submit" class="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2A0B5C" stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="FB">
+                    facebook.com/yourusername</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+                    discordapp.com/users/yourID</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174814.png" alt="Indeed">
+                    indeed.com/in/yourprofile</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Email">
+                    yourname@example.com</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/126/126509.png" alt="Phone">
+                    +639XXXXXXXXX</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="back-to-top">&#9650;</a>
 
     <footer>
-        <p>© 2026 Daniel Kelly. Designed in Lipa, Philippines.</p>
+        <p>© 2026 Daniel Kelly. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+
+        window.onscroll = () => {
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        let currentSlide = 0;
+        const track = document.querySelector('.carousel-track');
+        const labels = document.querySelectorAll('.label-item');
+        const dots = document.querySelectorAll('.dot');
+
+        function moveCarousel(index) {
+            const track = document.querySelector('.carousel-track');
+
+            track.style.transform = `translateX(-${index * 100}%)`;
+
+
+            document.querySelectorAll('.label-item').forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        }
+
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % labels.length;
+            moveCarousel(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + labels.length) % labels.length;
+            moveCarousel(currentSlide);
+        }
+    </script>
+
 </body>
+
 </html>
